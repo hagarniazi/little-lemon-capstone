@@ -4,6 +4,23 @@ A responsive React web application for **Little Lemon**, a fictional Mediterrane
 
 The application allows users to explore the restaurant website and make a table reservation through an interactive booking form.
 
+## 🌐 Live Demo
+
+[View the Live Website](https://little-lemon-capstone-amber.vercel.app/)
+
+## 📸 Screenshots
+
+### Home Page
+![Home Page](public/screenshot-preview/screenshot-1.png)
+![Home Page](public/screenshot-preview/screenshot-2.png)
+![Home Page](public/screenshot-preview/screenshot-3.png)
+![Home Page](public/screenshot-preview/screenshot-4.png)
+
+
+### Reservation Page
+![Reservation Page](public/screenshot-preview/screenshot-5.png)
+
+
 ## 📂 Project Overview
 
 The project was built using **React** and focuses on creating a functional, accessible, responsive, and user-friendly restaurant website.
