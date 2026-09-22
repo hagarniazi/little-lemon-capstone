@@ -11,7 +11,11 @@ function CallToAction() {
           Fresh, vibrant dishes and warm hospitality in the heart of Chicago.
           Join us for a meal made with care.
         </p>
-        <Link className="button button--primary" to="/reservations">
+        <Link
+          className="button button--primary"
+          to="/reservations"
+          aria-label="On Click"
+        >
           Reserve a table
         </Link>
       </div>

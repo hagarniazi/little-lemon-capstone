@@ -1,70 +1,285 @@
-# Getting Started with Create React App
+# Little Lemon — Table Booking Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive React web application for **Little Lemon**, a fictional Mediterranean restaurant in Chicago. This project was created as the final capstone project for the **Meta Front-End Developer Professional Certificate**.
 
-## Available Scripts
+The application allows users to explore the restaurant website and make a table reservation through an interactive booking form.
 
-In the project directory, you can run:
+## 📂 Project Overview
 
-### `npm start`
+The project was built using **React** and focuses on creating a functional, accessible, responsive, and user-friendly restaurant website.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The application includes:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Home page
+* About page
+* Menu page
+* Reservations page
+* Online ordering page
+* Login page
+* Booking confirmation page
+* Responsive navigation
+* Table reservation form
+* Form validation
+* Available booking times based on the selected date
+* Booking API integration
+* Accessibility improvements
+* Unit tests
 
-### `npm test`
+## 🎯 Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🍋 Restaurant Website
 
-### `npm run build`
+The website provides several pages for exploring Little Lemon:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* **Home** — Restaurant introduction, specials, customer reviews, and information about the restaurant.
+* **About** — Information about Little Lemon and its restaurant experience.
+* **Menu** — Different food and drink categories with descriptions and prices.
+* **Reservations** — Interactive table booking form.
+* **Order Online** — Restaurant ordering interface.
+* **Login** — Demo login interface.
+* **Confirmed Booking** — Confirmation page displayed after a successful reservation.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 📅 Table Reservation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Users can make a reservation by selecting:
 
-### `npm run eject`
+* Date
+* Available time
+* Number of guests
+* Occasion
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The booking form uses controlled React components and React state.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### ✅ Form Validation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The reservation form includes:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* HTML5 validation
+* Required fields
+* Guest number validation
+* Client-side validation
+* Disabled submit button when the form is invalid
 
-## Learn More
+### 🔌 API Integration
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The application uses the provided Little Lemon API to:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Retrieve available reservation times
+* Update available times when the selected date changes
+* Submit reservation information
 
-### Code Splitting
+### ♿ Accessibility
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Accessibility was considered throughout the application using:
 
-### Analyzing the Bundle Size
+* Semantic HTML
+* Proper form labels
+* `htmlFor` and `id` relationships
+* Appropriate ARIA attributes
+* Keyboard-friendly interactive elements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 🧪 Unit Testing
 
-### Making a Progressive Web App
+The project includes unit tests using:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* Jest
+* React Testing Library
 
-### Advanced Configuration
+Tests cover important functionality including:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* React components
+* Booking form behavior
+* Initial available booking times
+* Updated booking times
+* API-related functionality
+* Form validation
 
-### Deployment
+## 🛠️ Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+* React
+* JavaScript
+* HTML5
+* CSS3
+* React Router
+* React Testing Library
+* Jest
+* Node.js
+* npm
+* Git
+* GitHub
 
-### `npm run build` fails to minify
+## 📁 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```text
+little-lemon-capstone/
+│
+├── public/
+│   ├── icons_assets/
+│   ├── api.js
+│   └── index.html
+│
+├── src/
+│   ├── App.js
+│   ├── App.css
+│   ├── Header.js
+│   ├── Nav.js
+│   ├── Main.js
+│   ├── Footer.js
+│   ├── Homepage.js
+│   ├── CallToAction.js
+│   ├── Specials.js
+│   ├── CustomersSay.js
+│   ├── Chicago.js
+│   ├── BookingPage.js
+│   ├── BookingForm.js
+│   ├── ConfirmedBooking.js
+│   ├── Main.test.js
+│   ├── BookingForm.test.js
+│   └── setupTests.js
+│
+├── package.json
+└── README.md
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+* Node.js
+* npm
+* Git
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/hagarniazi/little-lemon-capstone.git
+```
+
+Navigate to the project folder:
+
+```bash
+cd little-lemon-capstone
+```
+
+Install the dependencies:
+
+```bash
+npm install
+```
+
+## ▶️ Run the Application
+
+Start the development server:
+
+```bash
+npm start
+```
+
+The application will open in your browser at:
+
+```text
+http://localhost:3000
+```
+
+If port 3000 is already in use, React may automatically use another available port.
+
+## 🧪 Run Tests
+
+To run the test suite:
+
+```bash
+npm test
+```
+
+To run the tests without watch mode:
+
+```bash
+npm test -- --watchAll=false
+```
+
+## 📱 Responsive Design
+
+The application was designed to provide a responsive experience across different screen sizes, including:
+
+* Desktop
+* Tablet
+* Mobile
+
+CSS Grid, Flexbox, responsive layouts, and media queries were used where appropriate.
+
+## 🎨 UX/UI Design
+
+The project follows the Little Lemon brand style and incorporates the UX/UI principles studied throughout the Meta Front-End Developer Professional Certificate.
+
+The design focuses on:
+
+* Clear visual hierarchy
+* Consistent typography
+* Responsive layouts
+* Accessible forms
+* Easy navigation
+* Clear calls to action
+* User-friendly booking interactions
+
+## 🔄 Booking Flow
+
+The reservation process follows these steps:
+
+1. The user opens the **Reservations** page.
+2. The user selects a date.
+3. Available reservation times are loaded for the selected date.
+4. The user selects a time.
+5. The user enters the number of guests.
+6. The user selects an occasion.
+7. The form validates the entered information.
+8. The user submits the reservation.
+9. The booking API processes the submission.
+10. The user is redirected to the **Confirmed Booking** page.
+
+## 🔀 Git & Version Control
+
+Git was used throughout the project to track development progress and manage the project repository.
+
+The project is hosted on GitHub:
+
+[Little Lemon Capstone Repository](https://github.com/hagarniazi/little-lemon-capstone?utm_source=chatgpt.com)
+
+## 🎓 Course
+
+This project was completed as part of:
+
+**Meta Front-End Developer Professional Certificate**
+
+**Course 8 — Front-End Developer Capstone**
+
+The project demonstrates the application of skills learned throughout the certificate, including:
+
+* HTML and CSS
+* JavaScript
+* React
+* Responsive web development
+* UX/UI principles
+* Accessibility
+* Forms and validation
+* State management
+* API integration
+* Unit testing
+* Git and GitHub
+
+## 👩‍💻 Author
+
+**Hagar Niazi**
+
+GitHub:
+[@hagarniazi](https://github.com/hagarniazi?utm_source=chatgpt.com)
+
+LinkedIn:
+[Hagar Niazi on LinkedIn](https://www.linkedin.com/in/hagar-khaled-niazi?utm_source=chatgpt.com)
+
+## 📜 Certificate
+
+This project was completed as part of the **Meta Front-End Developer Professional Certificate** program on Coursera.
